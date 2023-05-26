@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delayed Messages</title>
+  <script>
+    function displayMessage(message, delay) {
+      setTimeout(function() {
+        document.getElementById("output").innerHTML += message + "<br>";
+      }, delay);
+    }
+  </script>
+</head>
+<body>
+  <h1>Delayed Messages</h1>
+  <div id="output"></div>
+
+  <script>
+    displayMessage("Message 1: Delayed message after 3 seconds", 3000);
+    displayMessage("Message 2: Delayed message after 5 seconds", 5000);
+    displayMessage("Message 3: Delayed message after 10 seconds", 10000);
+  </script>
+</body>
+</html>
